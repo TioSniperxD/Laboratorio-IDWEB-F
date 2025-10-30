@@ -196,3 +196,64 @@ footer {
     transform: scale(1.1);
 }
 
+
+/* === SECCIÓN SOBRE MÍ === */
+.sobre-mi {
+  text-align: center;
+  padding: 100px 20px;
+  color: #fff;
+  background-color: #0a0a0a;
+}
+
+.sobre-mi h2 {
+  font-size: 2.2rem;
+  margin-bottom: 25px;
+  
+}
+
+.sobre-mi p {
+  max-width: 800px;
+  margin: 0 auto 60px;
+  line-height: 1.8;
+  color: #ddd;
+  font-size: 1.1rem;
+}
+
+/* === TARJETAS === */
+.sobre-mi-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.sobre-mi-cards .card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1.5px solid #ffb300; /* borde dorado */
+  border-radius: 20px;
+  padding: 35px 45px;
+  width: 220px;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 0 12px rgba(255, 179, 0, 0.3); /* brillo dorado */
+}
+
+.sobre-mi-cards .card .emoji {
+  font-size: 2.4rem;
+  margin-bottom: 15px;
+}
+
+.sobre-mi-cards .card h3 {
+  color: #fff;
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+
+/* Hover con brillo más fuerte y movimiento */
+.sobre-mi-cards .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(255, 179, 0, 0.7);
+  border-color: #ffc933; /* tono dorado más brillante */
+}
