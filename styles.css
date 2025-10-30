@@ -4,12 +4,12 @@
   box-sizing: border-box;
 }
 
-/* === HEADER === */
+/*HEADER*/
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 25px 70px; /* 🔹 Más alto y centrado */
+  padding: 25px 70px;
   background: linear-gradient(180deg, #0a0a0a 0%, #000000 100%);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
   position: fixed;
@@ -20,9 +20,9 @@ header {
   transition: background 0.3s ease;
 }
 
-/* === LOGO === */
+/*LOGO*/
 .logo {
-  font-size: 1.8rem; /* 🔹 Más grande */
+  font-size: 1.8rem;
   font-weight: 700;
   color: #fff;
   text-decoration: none;
@@ -33,14 +33,14 @@ header {
 }
 
 .logo:hover {
-  color: #ffb300; /* toque amarillo */
+  color: #ffb300;
   transform: scale(1.05);
 }
 
-/* === NAV === */
+/* NAV*/
 nav {
   display: flex;
-  gap: 40px; /* 🔹 Espaciado más aireado */
+  gap: 40px;
 }
 
 nav a {
@@ -56,31 +56,30 @@ nav a:hover {
   transform: translateY(-2px);
 }
 
-/* === Fondo de todo el body (por si acaso) === */
 body {
   background-color: #0a0a0a;
   color: #fff;
   margin: 0;
   font-family: "Poppins", sans-serif;
-  padding-top: 90px; /* 🔹 evita que el header tape el contenido */
+  padding-top: 90px; 
 }
-/* Hero section */
-/* === HERO SECTION === */
+
+/*HERO SECTION */
 .hero {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0px 100px 60px; /* 🔹 separa del borde */
+  padding: 0px 100px 60px;
   min-height: 90vh;
   background-color: #0a0a0a;
   color: #fff;
   gap: 50px;
 }
 
-/* === TEXTO HERO === */
+/*TEXTO HERO*/
 .hero-text {
   flex: 1;
-  max-width: 600px; /* 🔹 para que no ocupe todo */
+  max-width: 600px; 
 }
 
 .hero-text h1 {
@@ -105,7 +104,7 @@ body {
   line-height: 1.6;
 }
 
-/* === IMAGEN HERO === */
+/*IMAGEN HERO*/
 .hero-image {
   flex: 1;
   display: flex;
@@ -113,7 +112,7 @@ body {
 }
 
 .hero-image img {
-  width: 300px; /* 🔹 tamaño ajustable */
+  width: 300px;
   height: 300px;
   border-radius: 50%;
   object-fit: cover;
@@ -125,7 +124,7 @@ body {
   transform: scale(1.05);
 }
 
-/* === RESPONSIVE === */
+/*RESPONSIVE*/
 @media (max-width: 900px) {
   .hero {
     flex-direction: column;
@@ -197,7 +196,7 @@ footer {
 }
 
 
-/* === SECCIÓN SOBRE MÍ === */
+/*SECCIÓN SOBRE MÍ */
 .sobre-mi {
   text-align: center;
   padding: 100px 20px;
@@ -219,7 +218,7 @@ footer {
   font-size: 1.1rem;
 }
 
-/* === TARJETAS === */
+/*TARJETAS*/
 .sobre-mi-cards {
   display: flex;
   justify-content: center;
@@ -230,14 +229,14 @@ footer {
 
 .sobre-mi-cards .card {
   background: rgba(255, 255, 255, 0.05);
-  border: 1.5px solid #ffb300; /* borde dorado */
+  border: 1.5px solid #ffb300;
   border-radius: 20px;
   padding: 35px 45px;
   width: 220px;
   text-align: center;
   transition: all 0.3s ease;
   cursor: pointer;
-  box-shadow: 0 0 12px rgba(255, 179, 0, 0.3); /* brillo dorado */
+  box-shadow: 0 0 12px rgba(255, 179, 0, 0.3); 
 }
 
 .sobre-mi-cards .card .emoji {
@@ -251,13 +250,12 @@ footer {
   line-height: 1.4;
 }
 
-/* Hover con brillo más fuerte y movimiento */
 .sobre-mi-cards .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 0 25px rgba(255, 179, 0, 0.7);
-  border-color: #ffc933; /* tono dorado más brillante */
+  border-color: #ffc933
 }
-/* === SECCIÓN PROYECTOS === */
+/* SECCIÓN PROYECTOS*/
 .proyectos {
   background-color: #0a0a0a;
   color: #fff;
@@ -270,7 +268,7 @@ footer {
   margin-bottom: 60px;
 }
 
-/* === GRID DE PROYECTOS === */
+/* GRID DE PROYECTO */
 .proyectos-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -278,7 +276,7 @@ footer {
   justify-content: center;
 }
 
-/* === TARJETA DE PROYECTO === */
+/* TARJETA DE PROYECTO */
 .proyecto-card {
   background: rgba(255, 255, 255, 0.05);
   border: 1.5px solid #ffb300;
@@ -293,7 +291,7 @@ footer {
   box-shadow: 0 0 25px rgba(255, 179, 0, 0.6);
 }
 
-/* === IMAGEN DEL PROYECTO === */
+/* IMAGEN DEL PROYECTO */
 .proyecto-img img {
   width: 100%;
   height: 180px;
@@ -302,7 +300,7 @@ footer {
   margin-bottom: 20px;
 }
 
-/* === TEXTO === */
+/* TEXTO */
 .proyecto-card h3 {
   color: #fff;
   margin-bottom: 10px;
@@ -316,7 +314,7 @@ footer {
   margin-bottom: 20px;
 }
 
-/* === BOTÓN (ojo) === */
+/*BOTÓN  */
 .btn-proyecto {
   display: inline-flex;
   align-items: center;
@@ -335,7 +333,7 @@ footer {
   color: #0a0a0a;
   transform: scale(1.1);
 }
-/* === SECCIÓN CURRICULUM === */
+/* SECCIÓN CURRICULUM */
 .cv {
   background-color: #0a0a0a;
   color: #fff;
@@ -354,7 +352,7 @@ footer {
   margin-bottom: 40px;
 }
 
-/* === BOTÓN DESCARGAR CV === */
+/* BOTÓN DESCARGAR CV */
 .btn-cv {
   display: inline-flex;
   align-items: center;
@@ -365,7 +363,7 @@ footer {
   border-radius: 30px;
   padding: 12px 25px;
   font-size: 1rem;
-  cursor: not-allowed; /* porque aún no tiene funcionalidad */
+  cursor: not-allowed;
   transition: all 0.3s ease;
   opacity: 0.6;
 }
@@ -379,7 +377,7 @@ footer {
   color: #0a0a0a;
   opacity: 1;
 }
-/* === SECCIÓN CONTACTO === */
+/* SECCIÓN CONTACTO*/
 .contacto {
   background-color: #0a0a0a;
   color: #fff;
@@ -392,7 +390,7 @@ footer {
   margin-bottom: 60px;
 }
 
-/* === CONTENEDOR === */
+/* CONTENEDOR*/
 .contacto-contenedor {
   display: flex;
   flex-wrap: wrap;
@@ -403,7 +401,7 @@ footer {
   text-align: left;
 }
 
-/* === TEXTO IZQUIERDA === */
+/*TEXTO IZQUIERDA */
 .contacto-info {
   flex: 1 1 350px;
   font-size: 1.1rem;
@@ -411,7 +409,7 @@ footer {
   line-height: 1.8;
 }
 
-/* === FORMULARIO === */
+/* FORMULARIO*/
 .contacto-form {
   flex: 1 1 400px;
   display: flex;
@@ -446,7 +444,7 @@ footer {
   box-shadow: 0 0 10px rgba(255, 179, 0, 0.5);
 }
 
-/* === DOS CAMPOS LADO A LADO === */
+/* DOS CAMPOS LADO A LADO*/
 .form-group.doble {
   display: flex;
   gap: 20px;
@@ -456,7 +454,7 @@ footer {
   flex: 1;
 }
 
-/* === BOTÓN === */
+/* BOTÓN */
 .btn-enviar {
   align-self: flex-start;
   background: transparent;
@@ -475,7 +473,7 @@ footer {
   transform: scale(1.05);
 }
 
-/* === RESPONSIVE === */
+/* RESPONSIVE */
 @media (max-width: 768px) {
   .contacto-contenedor {
     flex-direction: column;
@@ -490,7 +488,7 @@ footer {
     align-self: center;
   }
 }
-/* === CAMPOS DOBLES (Nombre y Correo) === */
+/*CAMPOS DOBLES (Nombre y Correo) */
 .form-group.doble {
   display: flex;
   flex-direction: column;
