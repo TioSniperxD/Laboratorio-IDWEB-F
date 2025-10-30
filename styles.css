@@ -379,3 +379,155 @@ footer {
   color: #0a0a0a;
   opacity: 1;
 }
+/* === SECCIÓN CONTACTO === */
+.contacto {
+  background-color: #0a0a0a;
+  color: #fff;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.contacto h2 {
+  font-size: 2.2rem;
+  margin-bottom: 60px;
+}
+
+/* === CONTENEDOR === */
+.contacto-contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+/* === TEXTO IZQUIERDA === */
+.contacto-info {
+  flex: 1 1 350px;
+  font-size: 1.1rem;
+  color: #ddd;
+  line-height: 1.8;
+}
+
+/* === FORMULARIO === */
+.contacto-form {
+  flex: 1 1 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  color: #ffb300;
+  font-weight: 500;
+}
+
+.form-group input {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1.5px solid #ffb300;
+  border-radius: 10px;
+  padding: 10px 15px;
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: #ffc933;
+  box-shadow: 0 0 10px rgba(255, 179, 0, 0.5);
+}
+
+/* === DOS CAMPOS LADO A LADO === */
+.form-group.doble {
+  display: flex;
+  gap: 20px;
+}
+
+.form-group.doble div {
+  flex: 1;
+}
+
+/* === BOTÓN === */
+.btn-enviar {
+  align-self: flex-start;
+  background: transparent;
+  color: #ffb300;
+  border: 1.5px solid #ffb300;
+  border-radius: 30px;
+  padding: 12px 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-enviar:hover {
+  background: #ffb300;
+  color: #0a0a0a;
+  transform: scale(1.05);
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .contacto-contenedor {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contacto-info {
+    text-align: center;
+  }
+
+  .btn-enviar {
+    align-self: center;
+  }
+}
+/* === CAMPOS DOBLES (Nombre y Correo) === */
+.form-group.doble {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.labels-dobles {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.labels-dobles label {
+  color: #ffb300;
+  font-weight: 500;
+  flex: 1;
+}
+
+.inputs-dobles {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.inputs-dobles input {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1.5px solid #ffb300;
+  border-radius: 10px;
+  padding: 10px 15px;
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.inputs-dobles input:focus {
+  border-color: #ffc933;
+  box-shadow: 0 0 10px rgba(255, 179, 0, 0.5);
+}
