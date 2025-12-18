@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio | DevAgumon</title>
+    <title>Contacto | DevAgumon</title>
     <link href="styles.css" rel="stylesheet">
 </head>
 <body>
@@ -15,7 +15,6 @@
             <a href="projects.html">Proyectos</a>
             <a href="cv.html">CV</a>
             <a href="contact.html">Contacto</a>
-            
         </nav>
     </header>
 
@@ -31,24 +30,28 @@
       </p>
     </div>
 
-    <form class="contacto-form">
+    <form class="contacto-form" id="contactForm" action="/enviar" method="POST">
+      
       <div class="form-group doble">
         <div class="labels-dobles">
           <label for="nombre">Nombre</label>
           <label for="correo">Correo electrónico</label>
         </div>
         <div class="inputs-dobles">
-          <input type="text" id="nombre" placeholder="Insertar nombre">
-          <input type="email" id="correo" placeholder="Insertar correo electrónico">
+          <input type="text" id="nombre" name="nombre" placeholder="Insertar nombre">
+          
+          <input type="email" id="correo" name="email" placeholder="Insertar correo electrónico">
         </div>
       </div>
 
       <div class="form-group">
         <label for="asunto">Asunto</label>
-        <input type="text" id="asunto" placeholder="Insertar asunto">
+        <input type="text" id="asunto" name="asunto" placeholder="Insertar asunto">
       </div>
 
-      <button type="button" class="btn-enviar">Enviar Mensaje</button>
+      <p id="errorMsg" style="color: #ff5e62; display: none; margin-bottom: 10px; font-weight: bold;">⚠️ Por favor completa todos los campos.</p>
+
+      <button type="submit" class="btn-enviar">Enviar Mensaje</button>
     </form>
   </div>
 </section>
@@ -56,5 +59,6 @@
     <footer>
         <p>© 2025 DevAgumon - Todos los derechos reservados</p>
     </footer>
+    <script src="contact.js"></script>
 </body>
 </html>

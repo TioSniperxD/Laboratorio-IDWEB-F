@@ -108,6 +108,8 @@ body {
 .hero-image {
   flex: 1;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
 
@@ -118,10 +120,75 @@ body {
   object-fit: cover;
   border: 3px solid #ffb300;
   transition: transform 0.4s ease;
+  /* margin-bottom: 20px;  <- Si agregaste esto antes para el texto, déjalo */
+
+  /* --- AGREGA ESTAS LÍNEAS --- */
+  position: relative; /* Necesario para que la animación 'top' funcione */
+  /* Nombre | Duración | Tipo de movimiento | Repetición */
+  animation: flotar 3s ease-in-out infinite;
 }
 
 .hero-image img:hover {
   transform: scale(1.05);
+}
+@keyframes flotar {
+  0% {
+    top: 0px; /* Posición inicial */
+  }
+  50% {
+    top: -15px; /* Sube 15 pixeles en la mitad de la animación */
+  }
+  100% {
+    top: 0px; /* Vuelve a la posición inicial al final */
+  }
+} 
+/* Contenedor principal del typewriter */
+#typewriter {
+  font-family: 'Inter', system-ui, sans-serif; /* Fuente moderna sin serifa */
+  font-size: 2rem; /* Tamaño grande */
+  font-weight: 800; /* Muy negrita */
+  display: inline-block;
+  color:red;
+}
+
+/* ESTILO DEL TEXTO (El truco del degradado) */
+.Typewriter__wrapper {
+  /* Crea el degradado de rojo a naranja/dorado */
+  background: linear-gradient(90deg, #ff5e62 0%, #ffb300 100%); 
+  
+  /* Recorta el fondo para que solo se vea en las letras */
+  -webkit-background-clip: text;
+  background-clip: text;
+  
+  /* Hace el texto transparente para ver el fondo */
+  -webkit-text-fill-color: transparent;
+  color: transparent; 
+}
+
+/* ESTILO DEL CURSOR (La barrita |) */
+.Typewriter__cursor {
+  color: #ffb300; /* Color dorado para el cursor */
+  font-weight: 400;
+  font-size: 2rem; /* Mismo tamaño que la letra */
+}
+.wave {
+  animation-name: wave-animation;  /* Nombre de la animación definida abajo */
+  animation-duration: 2.5s;        /* Cuánto dura un ciclo completo */
+  animation-iteration-count: infinite; /* Que no pare nunca */
+  transform-origin: 70% 70%;       /* CLAVE: Mueve el eje de rotación a la "muñeca" */
+  display: inline-block;           /* Necesario para que la rotación funcione bien */
+}
+
+/* La coreografía del movimiento */
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  /* Mueve a la derecha */
+   20% { transform: rotate(-8.0deg) }  /* Mueve a la izquierda */
+   30% { transform: rotate(14.0deg) }  /* Derecha */
+   40% { transform: rotate(-4.0deg) }  /* Izquierda */
+   50% { transform: rotate(10.0deg) }  /* Derecha */
+   60% { transform: rotate( 0.0deg) }  /* Vuelve al centro */
+  100% { transform: rotate( 0.0deg) }  /* Pausa hasta que termine el tiempo */
 }
 
 /*RESPONSIVE*/
@@ -528,4 +595,82 @@ footer {
 .inputs-dobles input:focus {
   border-color: #ffc933;
   box-shadow: 0 0 10px rgba(255, 179, 0, 0.5);
+}
+/* Estilo para las tarjetas cuando están seleccionadas */
+.card {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 1px solid #ffb300; /* Tu color dorado */
+}
+
+/* Clase que JS agregará a la tarjeta activa */
+.card.active {
+    background-color: #fff;
+    transform: scale(1.05);
+}
+.card.active h3, .card.active .emoji {
+    color: #000; /* Texto negro cuando el fondo es blanco */
+}
+
+/* CONTENEDOR DE LA INFORMACIÓN */
+.info-display {
+    margin-top: 40px;
+    width: 100%;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Ocultamos todas las cajas de contenido por defecto */
+.content-box {
+    display: none;
+    animation: fadeIn 0.5s ease;
+}
+
+/* Solo mostramos la que tenga esta clase */
+.active-content {
+    display: flex; /* O block si prefieres uno debajo de otro */
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* ESTILO DE LAS CAJAS BLANCAS CON TEXTO (Como en tu foto) */
+.detail-card {
+    background: #fff;
+    color: #000;
+    padding: 25px;
+    border-radius: 15px;
+    flex: 1;
+    min-width: 300px; /* Para que no se aplasten en celular */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.detail-card h3 {
+    margin-top: 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.detail-card .subtitle {
+    color: #666;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.detail-card ul {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.detail-card li {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+/* Animación suave al aparecer */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
 }
