@@ -13,30 +13,92 @@
             <a href="home.html">Inicio</a>
             <a href="about.html">Sobre mí</a>
             <a href="projects.html">Proyectos</a>
-            <a href="cv.html">CV</a>
+            <a href="cv.html" class="active">CV</a>
             <a href="contact.html">Contacto</a>
-            
         </nav>
     </header>
 
-    <section class="cv" id="cv">
-  <h2>📄 Curriculum Vitae</h2>
+    <section class="cv-section" id="cv">
+        
+        <div class="cv-header">
+            <h2>📄 Curriculum Vitae</h2>
+            <p>Puedes leer mi perfil aquí mismo o descargar la versión en PDF.</p>
+            
+            <a href="cv.pdf" download="CV_DevAgumon.pdf" class="btn-download">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M505.7 661a8 8 0 0 0 12.6 0l112-141.7c4.1-5.2.4-12.9-6.3-12.9h-74.1V168c0-4.4-3.6-8-8-8h-60c-4.4 0-8 3.6-8 8v338.3H400c-6.7 0-10.4 7.7-6.3 12.9l112 141.8zM878 626h-60c-4.4 0-8 3.6-8 8v154H214V634c0-4.4-3.6-8-8-8h-60c-4.4 0-8 3.6-8 8v198c0 17.7 14.3 32 32 32h684c17.7 0 32-14.3 32-32V634c0-4.4-3.6-8-8-8z"></path>
+                </svg>
+                Descargar PDF
+            </a>
+        </div>
 
-  <div class="cv-content">
-    <p>Insertar PDF CV</p>
+        <div class="cv-paper">
+            
+            <div class="cv-sidebar">
+                <div class="cv-profile">
+                    <h3>Emerson Jair <br>Paredes Chalco</h3>
+                    <span class="role">Backend Developer Junior</span>
+                </div>
 
-    <button class="btn-cv" disabled>
-      <svg stroke="currentColor" fill="currentColor" stroke-width="0"
-        viewBox="0 0 1024 1024" height="1em" width="1em"
-        xmlns="http://www.w3.org/2000/svg">
-        <path
-          d="M505.7 661a8 8 0 0 0 12.6 0l112-141.7c4.1-5.2.4-12.9-6.3-12.9h-74.1V168c0-4.4-3.6-8-8-8h-60c-4.4 0-8 3.6-8 8v338.3H400c-6.7 0-10.4 7.7-6.3 12.9l112 141.8zM878 626h-60c-4.4 0-8 3.6-8 8v154H214V634c0-4.4-3.6-8-8-8h-60c-4.4 0-8 3.6-8 8v198c0 17.7 14.3 32 32 32h684c17.7 0 32-14.3 32-32V634c0-4.4-3.6-8-8-8z">
-        </path>
-      </svg>
-      Descargar CV
-    </button>
-  </div>
-</section>
+                <div class="cv-block">
+                    <h4>🛠️ Stack Técnico</h4>
+                    <ul>
+                        <li>Python</li>
+                        <li>Java (Swing/JavaFX)</li>
+                        <li>SQL (MySQL)</li>
+                        <li>HTML5, CSS3, JS</li>
+                        <li>Git & GitHub</li>
+                    </ul>
+                </div>
+
+                <div class="cv-block">
+                    <h4>💬 Idiomas</h4>
+                    <ul>
+                        <li>Español (Nativo)</li>
+                        <li>Inglés (A2)</li>
+                    </ul>
+                </div>
+
+                <div class="cv-block">
+                    <h4>📞 Contacto</h4>
+                    <ul class="contact-info">
+                        <li>eparedescha@unsa.edu.pe</li>
+                        <li>linkedin.com/in/emerson-jair-paredes-chalco-8b106b397/</li>
+                        <li>github.com/TioSniperxD</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="cv-main">
+                
+                <div class="cv-group">
+                    <h4>🚀 Proyectos Destacados</h4>
+                    
+                    <div class="cv-item">
+                        <h5>Sistema de Gestión Bancaria (Java + SQL)</h5>
+                        <p>Desarrollo de aplicación de escritorio con interfaz gráfica. Implementación de transacciones seguras, gestión de usuarios y persistencia de datos.</p>
+                    </div>
+
+                    <div class="cv-item">
+                        <h5>Portal de Registro Corporativo (Web)</h5>
+                        <p>Landing page responsive para onboarding de empleados. Validaciones en tiempo real con JavaScript y diseño UX/UI optimizado.</p>
+                    </div>
+                </div>
+
+                <div class="cv-group">
+                    <h4>🎓 Educación</h4>
+                    
+                    <div class="cv-item">
+                        <h5>Ingeniería de Sistemas</h5>
+                        <span class="date">En curso</span>
+                        <p>Universidad Nacional de San Agustín</p>
+                        <p class="desc">Formación en algoritmos, estructuras de datos y arquitectura de software.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
 
     <footer>
         <p>© 2025 DevAgumon - Todos los derechos reservados</p>
