@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio | DevAgumon</title>
-    <link href="styles.css" rel="stylesheet">
-</head>
-<body>
-    <header>
-        <a href="home.html" class="logo">🦖 DevAgumon</a>
-        <nav>
-            <a href="home.html">Inicio</a>
-            <a href="about.html">Sobre mí</a>
-            <a href="projects.html">Proyectos</a>
-            <a href="cv.html">CV</a>
-            <a href="contact.html">Contacto</a>
-            
-        </nav>
-    </header>
-    
 
-    <section id="sobre-mi" class="sobre-mi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio | DevAgumon</title>
+  <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <a href="home.html" class="logo">🦖 DevAgumon</a>
+    <nav>
+      <a href="home.html">Inicio</a>
+      <a href="about.html">Sobre mí</a>
+      <a href="projects.html">Proyectos</a>
+      <a href="cv.html">CV</a>
+      <a href="contact.html">Contacto</a>
+
+    </nav>
+  </header>
+
+
+  <section id="sobre-mi" class="sobre-mi">
     <h2>Conoce sobre mí</h2>
     <p>
       Soy un entusiasta de la programación, espero poder crecer en este mundo tan cambiante.
@@ -32,17 +34,17 @@
         <div class="emoji">🏗️</div>
         <h3>Experiencia</h3>
       </div>
-      
+
       <div class="card" onclick="mostrarInfo('stack', this)">
         <div class="emoji">💻</div>
         <h3>Stack<br>Tecnológico</h3>
       </div>
-      
+
       <div class="card" onclick="mostrarInfo('certificados', this)">
         <div class="emoji">📜</div>
         <h3>Certificados</h3>
       </div>
-      
+
       <div class="card" onclick="mostrarInfo('logros', this)">
         <div class="emoji">🏆</div>
         <h3>Logros</h3>
@@ -50,54 +52,111 @@
     </div>
 
     <div class="info-display">
+
+      <div id="experiencia" class="content-box active-content">
+    
+    <div class="detail-card">
+        <h3>Desarrollador Web Freelance</h3>
+        <p class="subtitle">Proyectos Personales & Académicos (2024 - Actualidad)</p>
+        <ul>
+            <li>Diseño y desarrollo de páginas web responsivas (landing pages).</li>
+            <li>Implementación de lógica de negocio usando <strong>Python</strong> y <strong>JavaScript</strong>.</li>
+            <li>Gestión de bases de datos relacionales con <strong>SQL</strong>.</li>
+        </ul>
+    </div>
+
+    <div class="detail-card">
+        <h3>Estudiante de Ingeniería de Sistemas</h3>
+        <p class="subtitle">Formación Universitaria (En curso)</p>
+        <ul>
+            <li>Desarrollo de algoritmos complejos y estructuras de datos.</li>
+            <li>Liderazgo en proyectos grupales de desarrollo de software.</li>
+            <li>Investigación en tecnologías Backend y optimización de código.</li>
+        </ul>
+    </div>
+</div>
+
+      <div id="stack" class="content-box">
+        <div class="tech-grid">
+
+          <div class="tech-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5 Logo">
+            <h4>HTML</h4>
+          </div>
+
+          <div class="tech-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3 Logo">
+            <h4>CSS</h4>
+          </div>
+
+          <div class="tech-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+              alt="JavaScript Logo">
+            <h4>JavaScript</h4>
+          </div>
+
+          <div class="tech-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java Logo">
+            <h4>Java</h4>
+          </div>
+
+          <div class="tech-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python Logo">
+            <h4>Python</h4>
+          </div>
+
+          <div class="tech-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+              alt="SQL Logo">
+            <h4>SQL</h4>
+          </div>
+
+        </div>
+      </div>
+
+      <div id="certificados" class="content-box">
+    <h3 style="text-align: center; color: #ffb300; margin-bottom: 20px;">Formación Continua</h3>
+    
+    <div class="tech-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
         
-        <div id="experiencia" class="content-box active-content">
-            <div class="detail-card">
-                <h3>Trabajo independiente (Desarrollador Freelance)</h3>
-                <p class="subtitle">Clientes particulares / Proyectos propios (20/12/2024 - Actualidad)</p>
-                <ul>
-                    <li>Levantamiento de requerimientos, diseño UI/UX y desarrollo fullstack.</li>
-                    <li>Desarrollo de sitios web para emprendedores y PYMES.</li>
-                    <li>Automatización de tareas administrativas.</li>
-                </ul>
-            </div>
-            <div class="detail-card">
-                <h3>Etapa práctica (Tecnólogo en Análisis y Desarrollo)</h3>
-                <p class="subtitle">SENA Centro Minero (01/10/2024 - 01/04/2025)</p>
-                <ul>
-                    <li>Colaboración con instructores para levantamiento de requerimientos.</li>
-                    <li>Diseño, prototipado y desarrollo de aplicativos (Kardex, PSEEP).</li>
-                    <li>Pruebas, despliegue y soporte técnico.</li>
-                </ul>
-            </div>
+        <div class="detail-card">
+            <h3>Backend con Python</h3>
+            <p class="subtitle">Ruta Autodidacta (En progreso)</p>
+            <li>Aprendiendo sobre APIs REST, manejo de rutas y conexión a bases de datos con documentación oficial y recursos online.</li>
         </div>
 
-        <div id="stack" class="content-box">
-            <div class="detail-card">
-                <h3>Lenguajes & Herramientas</h3>
-                <p>Aquí va tu lista de tecnologías (Python, JS, HTML, CSS...)</p>
-            </div>
+        <div class="detail-card">
+            <h3>Ingeniería de Sistemas</h3>
+            <p class="subtitle">Universidad (Semestres cursados)</p>
+            <li>Formación académica con bases sólidas en algoritmos, lógica de programación y matemáticas.</li>
         </div>
 
-        <div id="certificados" class="content-box">
-            <div class="detail-card">
-                <h3>Mis Certificaciones</h3>
-                <p>Aquí van tus cursos completados.</p>
-            </div>
-        </div>
-
-        <div id="logros" class="content-box">
-            <div class="detail-card">
-                <h3>Logros Destacados</h3>
-                <p>Hackathons, proyectos destacados, etc.</p>
-            </div>
+        <div class="detail-card">
+            <h3>Bases de Datos SQL</h3>
+            <p class="subtitle">Próximo objetivo de certificación</p>
+            <li>Actualmente practicando consultas complejas y diseño de diagramas entidad-relación.</li>
         </div>
 
     </div>
-</section>
-    <footer>
-        <p>© 2025 DevAgumon - Todos los derechos reservados</p>
-    </footer>
-    <script src="about.js"></script>
+</div>
+      <div id="logros" class="content-box">
+        <div class="detail-card">
+          <h3>Logros Destacados</h3>
+           <ul>
+            <br>
+            <li>Aun no tengo logros realizados en base a la carrera</li>
+            <li>Pero creo que un gran logro fue haber ingresado en el primer intento a la universidad</li>
+          </ul>
+          
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <footer>
+    <p>© 2025 DevAgumon - Todos los derechos reservados</p>
+  </footer>
+  <script src="about.js"></script>
 </body>
+
 </html>
